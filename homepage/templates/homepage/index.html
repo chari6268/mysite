@@ -1,24 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Hello Django on Render!</title>
-
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-          crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature {
+            flex-basis: 30%;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            .feature {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-<main class="container">
-    <div class="row text-center justify-content-center">
-        <div class="col">
-            <h1 class="display-4">Hello World!</h1>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p>A simple, elegant landing page design</p>
         </div>
-    </div>
-</main>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Discover Something Amazing</h2>
+            <p>This is a simple landing page template that you can customize to fit your needs. It's responsive, clean, and easy to modify.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Highlight your first key feature or benefit here.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Describe another important aspect of your product or service.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Share the third unique selling point that sets you apart.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
